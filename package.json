@@ -1,0 +1,29 @@
+{
+  "name": "reqres-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cucumber.js",
+  "scripts": {
+    "test": "cucumber-js --parallel 1 -f json:report/report.json && node report.js && cat report/report.json | npx cucumber-junit > report/junitreport.xml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominovn/reqres-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dominovn/reqres-test/issues"
+  },
+  "homepage": "https://github.com/dominovn/reqres-test#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.45.3",
+    "cucumber": "^6.0.7",
+    "cucumber-html-reporter": "^7.1.1",
+    "dotenv": "^16.4.5",
+    "playwright": "^1.45.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
