@@ -20,60 +20,16 @@ reqres-playwright-tests-js/
 ├── README.md                 # Project documentation
 └── node_modules/             # Installed packages (ignored)
 
-Setup Environment
-Prerequisites
-Node.js (version 16.x or higher)
-npm (usually comes with Node.js)
-Installation
-Clone the Repository:
+## Installation
 
-bash
-Copy code
+To set up the project on your local machine, follow these steps:
+
+### 1. Clone the Repository
+
+Clone the repository from GitHub and navigate into the project directory:
+
+```bash
 git clone https://github.com/your-username/reqres-playwright-tests-js.git
 cd reqres-playwright-tests-js
-Install Dependencies:
 
-bash
-Copy code
-npm install
-Install Playwright Browsers:
-
-bash
-Copy code
-npx playwright install
-Configure Environment Variables:
-
-Create .env.test and .env.stage files in the project's root directory with the following content:
-
-.env.test
-
-plaintext
-Copy code
-BASE_URL=https://reqres.in
-EMAIL=eve.holt@reqres.in
-PASSWORD=cityslicka
-INVALID_PASSWORD=wrongpassword
-.env.stage
-
-plaintext
-Copy code
-BASE_URL=https://reqres.in
-EMAIL=eve.holt@reqres.in
-PASSWORD=cityslicka
-INVALID_PASSWORD=wrongpassword
-Run Tests
-Running Tests in Different Environments
-Test Environment:
-
-bash
-Copy code
-NODE_ENV=test npx playwright test
-Stage Environment:
-
-bash
-Copy code
-NODE_ENV=stage npx playwright test
-Generating Reports
-By default, Playwright generates an HTML report in the playwright-report folder after test execution.
-
-You can configure report settings in playwright.config.js if needed.
+### 2. Install npm
