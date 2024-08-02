@@ -1,0 +1,25 @@
+{
+  "name": "reqres-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominovn/reqres-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dominovn/reqres-test/issues"
+  },
+  "homepage": "https://github.com/dominovn/reqres-test#readme",
+  "dependencies": {
+    "@playwright/test": "^1.45.3",
+    "dotenv": "^16.4.5",
+    "playwright": "^1.45.3"
+  }
+}
