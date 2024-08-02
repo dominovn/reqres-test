@@ -19,7 +19,7 @@ reqres-playwright-tests-js/
 ├── playwright.config.js      # Playwright configuration
 ├── README.md                 # Project documentation
 └── node_modules/             # Installed packages (ignored)
-
+```
 ## Installation
 
 To set up the project on your local machine, follow these steps:
@@ -29,7 +29,31 @@ To set up the project on your local machine, follow these steps:
 Clone the repository from GitHub and navigate into the project directory:
 
 ```bash
-git clone https://github.com/your-username/reqres-playwright-tests-js.git
-cd reqres-playwright-tests-js
+git clone https://github.com/dominovn/reqres-test.git
+```
 
-### 2. Install npm
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Install Playwright
+```bash
+npx playwright install
+```
+
+## Run Tests
+### Running Tests in Different Environments
+
+#### Test Environment:
+```bash
+NODE_ENV=test npx playwright test
+```
+
+#### Stage Environment:
+```bash
+NODE_ENV=stage npx playwright test
+```
+
+#### Generating Reports
+HTML report is in the playwright-report folder
